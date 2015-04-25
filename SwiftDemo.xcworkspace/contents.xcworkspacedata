@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SerialAndDeserialJson/SerialAndDeserialJson.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SynDownloadNSURLConnection/SynDownloadNSURLConnection.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AsynDownloadNSURLConnection/AsynDownloadNSURLConnection.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NSURLSessionBackground/NSURLSessionBackground.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NSURLSession/NSURLSession.xcodeproj">
    </FileRef>
 </Workspace>

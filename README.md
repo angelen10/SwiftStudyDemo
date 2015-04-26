@@ -7,3 +7,5 @@
 (2)增加一些Swift语言基础知识
 
 (3)增加QQ页面切换效果
+
+(4)增加一个autolayout demo例子

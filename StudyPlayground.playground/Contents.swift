@@ -154,3 +154,266 @@ func returnFifteen() -> Int
 returnFifteen()
 
 
+func makeIncrementer() -> (Int -> Int)
+{
+    func addOne(number : Int) -> Int
+    {
+        return number + 1
+    }
+    return addOne
+}
+
+var increment = makeIncrementer()
+increment(7)
+
+
+func hasAnyMatches(list : [Int], condition: Int -> Bool) -> Bool
+{
+    for item in list
+    {
+        if condition(item)
+        {
+            return true
+        }
+    }
+    return false
+}
+
+func lessThanTen(number: Int) -> Bool
+{
+    return number < 10
+}
+
+var numbers = [20,19,7,12]
+hasAnyMatches(numbers, lessThanTen)
+
+
+
+numbers.map({
+    (number: Int) -> Int in
+    let result = 3 * number
+    return result
+})
+
+numbers.map ({number in 3 * number })
+
+class Shape
+{
+    var numberOfSides = 0
+    func simpleDescription() -> String
+    {
+        return "A shape with \(numberOfSides) sides"
+    }
+}
+
+var shape = Shape()
+shape.numberOfSides = 7
+var shapeDescription = shape.simpleDescription()
+
+
+class NameShape
+{
+    var numberOfSides : Int = 0
+    var name : String
+    
+    init(name : String)
+    {
+        self.name = name
+    }
+    
+    func simpleDescription() -> String
+    {
+        return "A shape with \(numberOfSides) sides"
+    }
+}
+
+class Square : NameShape
+{
+    var sideLength : Double
+    
+    init(sideLength : Double , name: String)
+    {
+        self.sideLength = sideLength
+        super.init(name: name)
+        numberOfSides = 4
+    }
+    
+    func area() -> Double
+    {
+        return sideLength * sideLength
+    }
+    
+    override func simpleDescription() -> String {
+        return "A square with sides of length \(sideLength)"
+    }
+}
+
+let test = Square(sideLength: 5.2, name: "my test square")
+test.area()
+test.simpleDescription()
+
+
+
+class Equil : NameShape
+{
+    var sideLength : Double = 0.0
+    
+    init(sideLength : Double,name : String)
+    {
+        self.sideLength = sideLength
+        super.init(name: name)
+        numberOfSides = 3
+    }
+    
+    var perimeter : Double
+    {
+        get
+        {
+            return 3.0 * sideLength
+        }
+        
+        set
+        {
+            sideLength = newValue / 3.0
+        }
+    }
+    
+    override func simpleDescription() -> String {
+        return "An equil triagle with side of length \(sideLength)"
+    }
+}
+
+var triangle = Equil(sideLength: 3.1, name: "a triangle")
+triangle.perimeter
+triangle.perimeter = 9.9
+triangle.perimeter
+triangle.sideLength
+triangle.simpleDescription()
+
+enum Rank : Int
+{
+    case Ace = 1
+    case Two,Three,Four,Five,Six,Seven,Eight,Nine,Ten
+    case Jack,Queen,King
+    func simpleDescription() -> String
+    {
+        switch self
+        {
+        case .Ace:
+            return "ace"
+        case .Jack:
+            return "jack"
+        case .Queen:
+            return "queen"
+        case .King:
+            return "king"
+        default:
+            return String(self.rawValue)
+        }
+    }
+}
+
+enum Suit
+{
+    case Spades,Hearts,Diamonds,Clubs
+    func simpleDescription() -> String
+    {
+        switch self
+        {
+        case .Spades:
+            return "spades"
+        case .Hearts:
+            return "hearts"
+        case .Diamonds:
+            return "diamonds"
+        case .Clubs:
+            return "clubs"
+        }
+    }
+}
+
+let hearts = Suit.Hearts
+let heartsDescription = hearts.simpleDescription()
+
+struct Card
+{
+    var rank : Rank
+    var suit : Suit
+    
+    func simpleDescription() -> String
+    {
+        return "The \(rank.simpleDescription()) of \(suit.simpleDescription())"
+    }
+}
+
+let threeOfSpades = Card(rank: .Three, suit: .Spades)
+let threeOfSpadesDescription = threeOfSpades.simpleDescription()
+
+
+protocol ExampleProtocol
+{
+    var simpleDescription : String {get}
+    mutating func adjust()
+}
+
+class SimpleClass : ExampleProtocol
+{
+    var simpleDescription : String = "A very simple class"
+    var anotherProperty : Int = 69105
+    func adjust() {
+        simpleDescription += "Now 100% adjusted"
+    }
+}
+
+var a = SimpleClass()
+a.adjust()
+
+struct SimpleStruct : ExampleProtocol
+{
+    var simpleDescription : String = "A simple structure"
+    mutating func adjust() {
+        simpleDescription += "(adjusted)"
+    }
+}
+
+var b = SimpleStruct()
+b.adjust()
+let bDescription = b.simpleDescription
+
+extension Int : ExampleProtocol
+{
+    var simpleDescription : String
+    {
+        return "The number \(self)"
+    }
+    
+    mutating func adjust() {
+        self += 42
+    }
+}
+
+7.simpleDescription
+
+func anyCommonElements (lhs : T ,rhs : U) -> Bool
+{
+    for lhsItem in lhs
+    {
+        for rhsItem in rhs
+        {
+            if lhsItem == rhsItem
+            {
+                return true
+            }
+        }
+    }
+    return false
+}
+
+anyCommonElements([1,2,3],[3])
+
+
+
+
+
+
+

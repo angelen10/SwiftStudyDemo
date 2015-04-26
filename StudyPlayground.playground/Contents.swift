@@ -1,5 +1,7 @@
 //: Playground - noun: a place where people can play
 
+import UIKit
+
 println("hello world")
 
 let label = "The Width is   "
@@ -394,22 +396,102 @@ extension Int : ExampleProtocol
 
 7.simpleDescription
 
-func anyCommonElements (lhs : T ,rhs : U) -> Bool
+class Person
 {
-    for lhsItem in lhs
+    var Name : String = "Initial Name"
+    
+    init()
     {
-        for rhsItem in rhs
-        {
-            if lhsItem == rhsItem
-            {
-                return true
-            }
-        }
+        self.sayChesses()
+        println("New person initialized")
     }
-    return false
+    
+    func sayChesses()
+    {
+        println("Cheese")
+    }
+
 }
 
-anyCommonElements([1,2,3],[3])
+var per = Person()
+per.Name = "Alice"
+per.sayChesses()
+
+var secondperson = Person()
+secondperson.Name = "Bob"
+
+var Inta = 10
+var Intb = 15
+var total = Inta + Intb
+
+class Animal
+{
+    var Name:String = "dog"
+    
+    init()
+    {
+        
+    }
+    
+    func Walk()
+    {
+        println("dog is walk")
+    }
+}
+
+class cat : Animal
+{
+    var CatName : String = "tom"
+    
+    override init()
+    {
+        super.init()
+        super.Name = "cattom"
+    }
+    
+    func fly()
+    {
+        println("I cann't fly")
+    }
+    
+    override func Walk()
+    {
+        println("cat is walk")
+        
+        super.Walk()
+    }
+}
+
+
+var catDemo = cat()
+catDemo.Walk()
+catDemo.fly()
+
+var randnumber = arc4random_uniform(13)
+var strnumber : String = String(format: "card%d", randnumber)
+
+println(strnumber)
+
+var mySecondArray : [Int] = [Int]()
+mySecondArray.append(3)
+
+mySecondArray.count
+
+var myArray : [String] = ["hello","world","jack"]
+myArray.count
+myArray[0] = "wang"
+
+myArray.insert("zheng", atIndex: 3)
+
+myArray.count
+
+
+
+
+
+
+
+
 
 
 

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -146,6 +147,8 @@
                                 <exclude reference="uZ4-b8-cQN"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="PZ1-MG-xam"/>
+                                <exclude reference="bpt-bm-jNA"/>
                                 <exclude reference="DXD-o0-9mB"/>
                                 <exclude reference="G7C-o2-XOw"/>
                                 <exclude reference="U3Z-nX-lOL"/>
@@ -154,8 +157,6 @@
                                 <exclude reference="K5h-Z5-haG"/>
                                 <exclude reference="hjQ-aZ-CuT"/>
                                 <exclude reference="lVP-PY-ak6"/>
-                                <exclude reference="PZ1-MG-xam"/>
-                                <exclude reference="bpt-bm-jNA"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -165,6 +166,8 @@
                                 <include reference="uZ4-b8-cQN"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="PZ1-MG-xam"/>
+                                <include reference="bpt-bm-jNA"/>
                                 <include reference="DXD-o0-9mB"/>
                                 <include reference="G7C-o2-XOw"/>
                                 <include reference="U3Z-nX-lOL"/>
@@ -173,8 +176,6 @@
                                 <include reference="K5h-Z5-haG"/>
                                 <include reference="hjQ-aZ-CuT"/>
                                 <include reference="lVP-PY-ak6"/>
-                                <include reference="PZ1-MG-xam"/>
-                                <include reference="bpt-bm-jNA"/>
                             </mask>
                         </variation>
                     </view>

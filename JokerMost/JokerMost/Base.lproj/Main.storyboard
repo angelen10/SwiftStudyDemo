@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dln-zb-5kS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Root Tab Bar Controller-->
+        <scene sceneID="duK-3y-rFV">
+            <objects>
+                <viewController id="Dln-zb-5kS" customClass="RootTabBarController" customModule="JokerMost" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9iJ-Iq-woW"/>
+                        <viewControllerLayoutGuide type="bottom" id="XGJ-Ab-fFg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mdu-fB-GiU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iOv-7i-hQG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387" y="-360"/>
+        </scene>
+    </scenes>
+</document>

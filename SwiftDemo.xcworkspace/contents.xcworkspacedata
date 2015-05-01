@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:JokerMost/JokerMost.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:AutoLayoutDemo/AutoLayoutDemo.xcodeproj">
    </FileRef>
    <FileRef

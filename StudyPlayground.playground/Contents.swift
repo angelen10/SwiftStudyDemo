@@ -485,8 +485,35 @@ myArray.insert("zheng", atIndex: 3)
 
 myArray.count
 
+class SwiftMath
+{
+    var name:String?
+    
+    init(name : String)
+    {
+        self.name = name
+        
+        println(self.name)
+    }
+    
+    func sum(num1: Int,num2: Int) -> Int
+    {
+        return num1 + num2
+    }
+    
+    func mul(num1: Int,num2: Int) -> Int
+    {
+        return num1 * num2
+    }
+}
 
+var sm = SwiftMath(name: "pandazheng")
+sm.name = "panda"
+sm.sum(1,num2: 2)
+sm.mul(2,num2: 3)
 
+sm.sum(10 , num2: 24)
+sm.mul(8, num2: 3)
 
 
 

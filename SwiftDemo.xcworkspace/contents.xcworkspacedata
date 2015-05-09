@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CallOC/CallOC.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Basic.playground">
+   </FileRef>
+   <FileRef
       location = "group:JokerMost/JokerMost.xcodeproj">
    </FileRef>
    <FileRef

@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A47342A91AFDB83600898CEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47342A81AFDB83600898CEA /* AppDelegate.swift */; };
+		A47342AB1AFDB83600898CEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47342AA1AFDB83600898CEA /* ViewController.swift */; };
+		A47342AE1AFDB83600898CEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47342AC1AFDB83600898CEA /* Main.storyboard */; };
+		A47342B01AFDB83600898CEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47342AF1AFDB83600898CEA /* Images.xcassets */; };
+		A47342B31AFDB83600898CEA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A47342B11AFDB83600898CEA /* LaunchScreen.xib */; };
+		A47342BF1AFDB83600898CEA /* CallOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47342BE1AFDB83600898CEA /* CallOCTests.swift */; };
+		A47342CB1AFDB85800898CEA /* OCHello.m in Sources */ = {isa = PBXBuildFile; fileRef = A47342CA1AFDB85800898CEA /* OCHello.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A47342B91AFDB83600898CEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A473429B1AFDB83600898CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A47342A21AFDB83600898CEA;
+			remoteInfo = CallOC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A47342A31AFDB83600898CEA /* CallOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47342A71AFDB83600898CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47342A81AFDB83600898CEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A47342AA1AFDB83600898CEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A47342AD1AFDB83600898CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A47342AF1AFDB83600898CEA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A47342B21AFDB83600898CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A47342B81AFDB83600898CEA /* CallOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47342BD1AFDB83600898CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47342BE1AFDB83600898CEA /* CallOCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallOCTests.swift; sourceTree = "<group>"; };
+		A47342C81AFDB85800898CEA /* CallOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CallOC-Bridging-Header.h"; sourceTree = "<group>"; };
+		A47342C91AFDB85800898CEA /* OCHello.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCHello.h; sourceTree = "<group>"; };
+		A47342CA1AFDB85800898CEA /* OCHello.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCHello.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A47342A01AFDB83600898CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47342B51AFDB83600898CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A473429A1AFDB83600898CEA = {
+			isa = PBXGroup;
+			children = (
+				A47342A51AFDB83600898CEA /* CallOC */,
+				A47342BB1AFDB83600898CEA /* CallOCTests */,
+				A47342A41AFDB83600898CEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A47342A41AFDB83600898CEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A47342A31AFDB83600898CEA /* CallOC.app */,
+				A47342B81AFDB83600898CEA /* CallOCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A47342A51AFDB83600898CEA /* CallOC */ = {
+			isa = PBXGroup;
+			children = (
+				A47342A81AFDB83600898CEA /* AppDelegate.swift */,
+				A47342AA1AFDB83600898CEA /* ViewController.swift */,
+				A47342C91AFDB85800898CEA /* OCHello.h */,
+				A47342CA1AFDB85800898CEA /* OCHello.m */,
+				A47342AC1AFDB83600898CEA /* Main.storyboard */,
+				A47342AF1AFDB83600898CEA /* Images.xcassets */,
+				A47342B11AFDB83600898CEA /* LaunchScreen.xib */,
+				A47342A61AFDB83600898CEA /* Supporting Files */,
+				A47342C81AFDB85800898CEA /* CallOC-Bridging-Header.h */,
+			);
+			path = CallOC;
+			sourceTree = "<group>";
+		};
+		A47342A61AFDB83600898CEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A47342A71AFDB83600898CEA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A47342BB1AFDB83600898CEA /* CallOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				A47342BE1AFDB83600898CEA /* CallOCTests.swift */,
+				A47342BC1AFDB83600898CEA /* Supporting Files */,
+			);
+			path = CallOCTests;
+			sourceTree = "<group>";
+		};
+		A47342BC1AFDB83600898CEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A47342BD1AFDB83600898CEA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A47342A21AFDB83600898CEA /* CallOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A47342C21AFDB83600898CEA /* Build configuration list for PBXNativeTarget "CallOC" */;
+			buildPhases = (
+				A473429F1AFDB83600898CEA /* Sources */,
+				A47342A01AFDB83600898CEA /* Frameworks */,
+				A47342A11AFDB83600898CEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallOC;
+			productName = CallOC;
+			productReference = A47342A31AFDB83600898CEA /* CallOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A47342B71AFDB83600898CEA /* CallOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A47342C51AFDB83600898CEA /* Build configuration list for PBXNativeTarget "CallOCTests" */;
+			buildPhases = (
+				A47342B41AFDB83600898CEA /* Sources */,
+				A47342B51AFDB83600898CEA /* Frameworks */,
+				A47342B61AFDB83600898CEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A47342BA1AFDB83600898CEA /* PBXTargetDependency */,
+			);
+			name = CallOCTests;
+			productName = CallOCTests;
+			productReference = A47342B81AFDB83600898CEA /* CallOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A473429B1AFDB83600898CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = pandazheng;
+				TargetAttributes = {
+					A47342A21AFDB83600898CEA = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					A47342B71AFDB83600898CEA = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = A47342A21AFDB83600898CEA;
+					};
+				};
+			};
+			buildConfigurationList = A473429E1AFDB83600898CEA /* Build configuration list for PBXProject "CallOC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A473429A1AFDB83600898CEA;
+			productRefGroup = A47342A41AFDB83600898CEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A47342A21AFDB83600898CEA /* CallOC */,
+				A47342B71AFDB83600898CEA /* CallOCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A47342A11AFDB83600898CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47342AE1AFDB83600898CEA /* Main.storyboard in Resources */,
+				A47342B31AFDB83600898CEA /* LaunchScreen.xib in Resources */,
+				A47342B01AFDB83600898CEA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47342B61AFDB83600898CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A473429F1AFDB83600898CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47342CB1AFDB85800898CEA /* OCHello.m in Sources */,
+				A47342AB1AFDB83600898CEA /* ViewController.swift in Sources */,
+				A47342A91AFDB83600898CEA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47342B41AFDB83600898CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47342BF1AFDB83600898CEA /* CallOCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A47342BA1AFDB83600898CEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A47342A21AFDB83600898CEA /* CallOC */;
+			targetProxy = A47342B91AFDB83600898CEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A47342AC1AFDB83600898CEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A47342AD1AFDB83600898CEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A47342B11AFDB83600898CEA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A47342B21AFDB83600898CEA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A47342C01AFDB83600898CEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A47342C11AFDB83600898CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A47342C31AFDB83600898CEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = CallOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CallOC/CallOC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A47342C41AFDB83600898CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = CallOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CallOC/CallOC-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		A47342C61AFDB83600898CEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CallOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CallOC.app/CallOC";
+			};
+			name = Debug;
+		};
+		A47342C71AFDB83600898CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CallOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CallOC.app/CallOC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A473429E1AFDB83600898CEA /* Build configuration list for PBXProject "CallOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47342C01AFDB83600898CEA /* Debug */,
+				A47342C11AFDB83600898CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A47342C21AFDB83600898CEA /* Build configuration list for PBXNativeTarget "CallOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47342C31AFDB83600898CEA /* Debug */,
+				A47342C41AFDB83600898CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A47342C51AFDB83600898CEA /* Build configuration list for PBXNativeTarget "CallOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47342C61AFDB83600898CEA /* Debug */,
+				A47342C71AFDB83600898CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A473429B1AFDB83600898CEA /* Project object */;
+}

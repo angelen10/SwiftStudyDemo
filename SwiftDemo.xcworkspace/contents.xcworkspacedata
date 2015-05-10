@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:WatchGame/WatchGame.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SwiftTutorialDemo.playground">
+   </FileRef>
+   <FileRef
       location = "group:CallSwift/CallSwift.xcodeproj">
    </FileRef>
    <FileRef

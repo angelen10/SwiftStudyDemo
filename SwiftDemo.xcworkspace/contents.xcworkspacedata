@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NSUserDefaultsDemo/NSUserDefaultsDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:StudySwiftDemo/StudySwiftDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ReadWritePlistDemo/ReadWritePlistDemo.xcodeproj">
    </FileRef>
    <FileRef

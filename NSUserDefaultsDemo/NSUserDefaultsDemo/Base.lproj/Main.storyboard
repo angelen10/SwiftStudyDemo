@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NSUserDefaultsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FHX-1j-bEI">
+                                <rect key="frame" x="16" y="215" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="editExit:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="g8H-bq-crf"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6C-Rv-Q3D">
+                                <rect key="frame" x="248" y="285" width="105" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="CeO-In-qNF"/>
+                                    <constraint firstAttribute="height" constant="30" id="DnI-Dm-CYd"/>
+                                </constraints>
+                                <state key="normal" title="数据保存">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IyS-TJ-lO6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZK-vy-Qgo">
+                                <rect key="frame" x="248" y="332" width="105" height="30"/>
+                                <state key="normal" title="数据载入">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s7y-Ue-FjV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c6C-Rv-Q3D" firstAttribute="width" secondItem="2ZK-vy-Qgo" secondAttribute="width" id="6B1-2h-iyM"/>
+                            <constraint firstItem="2ZK-vy-Qgo" firstAttribute="top" secondItem="c6C-Rv-Q3D" secondAttribute="bottom" constant="17" id="BO7-4u-Uq9"/>
+                            <constraint firstItem="c6C-Rv-Q3D" firstAttribute="height" secondItem="2ZK-vy-Qgo" secondAttribute="height" id="Wc4-o4-TpF"/>
+                            <constraint firstAttribute="centerX" secondItem="c6C-Rv-Q3D" secondAttribute="centerX" id="YqI-T4-ePR"/>
+                            <constraint firstItem="2ZK-vy-Qgo" firstAttribute="leading" secondItem="c6C-Rv-Q3D" secondAttribute="leading" id="cxq-Td-bE6"/>
+                            <constraint firstAttribute="centerY" secondItem="c6C-Rv-Q3D" secondAttribute="centerY" id="dUG-xd-5Ll"/>
+                            <constraint firstItem="FHX-1j-bEI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="195" id="eBS-B3-b8L"/>
+                            <constraint firstItem="FHX-1j-bEI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="mWn-pD-VbN"/>
+                            <constraint firstItem="FHX-1j-bEI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="unb-Ku-yuC"/>
+                        </constraints>
+                        <connections>
+                            <action selector="editEnd:" destination="BYZ-38-t0r" eventType="touchDown" id="PjC-iT-D97"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="textfields" destination="FHX-1j-bEI" id="7K2-x6-n1p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

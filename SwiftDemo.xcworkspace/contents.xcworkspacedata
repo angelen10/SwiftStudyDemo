@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:StoryBoardDemo/StoryBoardDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SettingBundleDemo/SettingBundleDemo.xcodeproj">
    </FileRef>
    <FileRef
